@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer text-color {
+    body {
+        @apply text-white;
+    }
+}
+
+@layer base {
+    h1 {
+        @apply text-4xl;
+    }
+
+    h2 {
+        @apply text-3xl;
+    }
+
+    h3 {
+        @apply text-2xl;
+    }
+
+    h4 {
+        @apply text-xl;
+    }
+}
+
+@layer utilities {
+    .h-container {
+        height: calc(100% - 4rem);
+    }
+}
+
+#__next {
+    height: 100vh;
+    max-height: 100vh;
+}
